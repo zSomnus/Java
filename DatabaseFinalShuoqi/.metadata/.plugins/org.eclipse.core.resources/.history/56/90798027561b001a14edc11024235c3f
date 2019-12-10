@@ -1,0 +1,22 @@
+package client;
+import bus.SportCar;
+
+public class TesterV1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("\n\n............ Display all students............\n");
+        
+        HashMap<String, SportCar> hashMapSportCar = SportCar.getList();
+
+        for(GamePlayer aPlayer : hashMapPlayers.values()) 
+        {
+            //System.out.println(  "\nJob ID: " + aStudent.getId() + "\n" + "Job Name: " + aStudent.getName());
+            System.out.print(aPlayer);
+            System.out.println(" [Score: " + aPlayer.getScore() + "]");
+        }
+
+        System.out.println("------------------------------------\n");
+	}
+
+}

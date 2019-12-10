@@ -1,0 +1,35 @@
+package bus;
+
+public class SportCar extends Car {
+//	private String sn; // Serial number
+//	private String brand;
+//	private String model;
+//	private float price;
+//	private int nos; // Number of seats
+//	private String date; // Made date
+	
+	public float gasCon; // Gas consumption
+	
+	public SportCar() {
+		super();
+		gasCon = 0.0f;
+	} 
+	public SportCar(String sn, String brand, String model, float price, int nos, String date, float gasCon) {
+		super(sn, brand, model, price, nos, date);
+		this.gasCon = gasCon;
+	}
+	
+	public float getGasCon() {
+		return gasCon;
+	}
+	public void setGasCon(float gasCon) {
+		this.gasCon = gasCon;
+	}
+	@Override
+	public String toString() {
+		return "SportCar [gasCon=" + gasCon + "]";
+	}
+	public Car clone() {
+		return null;
+	}
+}

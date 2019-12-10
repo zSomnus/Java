@@ -1,0 +1,19 @@
+package bus;
+
+public class Car implements IClonableCar {
+	
+	private String sn; // Serial number
+	private String brand;
+	private String model;
+	private float price;
+	private nos; // Number of seats
+	private date; // Made date
+	
+	public Car() {
+		
+	}
+	
+	public Car clone() {
+		return null;
+	}
+}

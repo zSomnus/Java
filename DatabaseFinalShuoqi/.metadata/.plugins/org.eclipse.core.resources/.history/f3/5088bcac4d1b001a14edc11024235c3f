@@ -1,0 +1,6 @@
+package bus;
+import bus.Car;
+
+public interface IClonableCar {
+	public abstract Car clone();
+}
